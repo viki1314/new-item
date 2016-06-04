@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-  
-viod average(float *p,int k)
+  viod average(float *p,int k)
 			{
 			int n;
     float average,sum=0,x=0;    //平均值计算，输出
