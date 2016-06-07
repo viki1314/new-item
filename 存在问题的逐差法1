@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+float average(float *p,int k)
+	{
+		int n;
+    float average,sum=0,x=0;//平均值计算，输出
+		printf("%d",k);
+       /*for(n=0;n<k;n++)   
+		{ 
+				 x=p[n];
+        sum=sum+x;
+    }
+    average=sum/(float)k;
+    printf("总和是：%.2f\n平均值是： %.2f \n ",sum,average);*/
+		return average;
+	}
+int main ()
+	{
+    int i,n,k;
+    float *pData=0;
+    double *delta=0;
+    printf ("要输入的数字的数目：");
+    scanf ("%d",&i);
+    delta =(double*) calloc ((i/2),sizeof(double));
+    pData = (float*) calloc (i,sizeof(float));
+    if (delta==NULL) exit (1);
+		if (pData==NULL) exit (1);
+
+    for (n=0;n<i;n++)
+    {
+        printf ("请输入数字 #%d：",n+1);
+        scanf ("%f",&pData[n]);
+    }
+
+	  for (n=0;n<(i/2);n++)
+			{
+			delta[n]=fabs(pData[(i/2+n)]-pData[n]);
+			printf("Delta%d=%.3f",n,delta[n]);
+			}
+    k=i/2;
+    average(delta,k);
+    free (pData);
+    free (delta);
+    return 0;
+	 }
