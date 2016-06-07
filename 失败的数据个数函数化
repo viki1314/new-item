@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+double * qty(i)
+	{ 
+	double * pData;
+	pData = (double*) calloc (i,sizeof(float));
+    if (pData==NULL) exit (1);
+		return pData;
+	}
+int main ()
+	{
+    int i,n;
+    double * p;
+    printf ("要输入的数字的数目：");
+    scanf ("%d",&i);
+    p=qty(i);
+    for (n=0;n<i;n++)
+    {
+        printf ("请输入数字 #%d：",n+1);
+        scanf ("%d",&p[n]);
+    }
+    printf ("你输入的数字为：");
+    for (n=0;n<i;n++) printf ("%d ",p[n]);
+    free (p);
+    return 0;
+	 }
