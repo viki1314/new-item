@@ -1,0 +1,183 @@
+#include "stdio.h"
+#include "conio.h"
+#include <stdlib.h>
+   main()
+	{
+	void guide();
+	guide();
+	}
+
+	 void guide()
+		 {	
+		  void calcul();
+	    void chooseaver();
+      void chooseA();
+	    void chooseB();
+	    void choosetotal();
+		  void choosesuccd(); 
+  	  for(;;)
+				{
+				system("cls");
+				choosesuccd(); 
+	      if(getch()==17)
+					{
+					break;
+					} 
+		    if(getch()==80)
+					{
+					system("cls");
+			    chooseaver();
+					  if(getch()==17)
+							{
+				     	break;
+							} 
+						if(getch(),getch()==77)
+							{
+							system("cls");
+							chooseA();
+							if(getch(),getch()==77)
+								{
+								system("cls");
+								choosetotal();
+ 							 if(getch(),getch()==77)
+									{ 
+								   system("cls");
+									continue;
+									}	
+								
+								}	
+							else if(getch(),getch()==80)
+									{
+							  system("cls");
+							  chooseB();
+								if(getch(),getch()==77)
+								{
+								system("cls");
+								choosetotal();
+ 							 if(getch(),getch()==77)
+									{ 
+								   system("cls");
+									continue;
+									}	
+								
+								}	
+
+									}
+								
+							}
+						
+
+					}
+		    else if(getch()==77)
+					{   
+					system("cls");
+					chooseA();
+					if(getch(),getch()==77)
+					{
+				  system("cls");
+					choosetotal();
+					if(getch(),getch()==77)
+						{ 
+						system("cls");
+						continue;
+						}
+					}
+					}
+				}
+			system("cls");
+      calcul();
+		 }
+
+
+    void choosesuccd()//Successive difference逐差
+		   	{
+				printf("\n  ****************************欢迎使用不确定度计算器**************************\n");
+				printf("        ┌───────┐\n");
+        printf("  》》》│逐差法求平均值├──┐\n");
+	      printf("        │              │    │\n");
+	      printf("        └───────┘    │\n");
+        printf("        ┌──────┐      │┌──────┐\n");
+	      printf("        │   平均值   ├───┴┤A类不确定度 ├────┐  ┌──────┐\n");
+	      printf("        │            │        │            │        │  │ 总不确定度 │\n");
+	      printf("        └──────┘        └──────┘        ├─┤            │\n");
+	      printf("                                ┌──────┐        │  │            │\n");
+	      printf("                                │B类不确定度 ├────┘  └──────┘\n");
+        printf("                                │            │\n");
+				printf("                                └──────┘\n");
+			}
+	  void chooseaver()	//平均值
+			{
+        printf("\n  ****************************欢迎使用不确定度计算器**************************\n");
+				printf("        ┌───────┐\n");
+        printf("        │逐差法求平均值├──┐\n");
+	      printf("        │              │    │\n");
+	      printf("        └───────┘    │\n");
+        printf("        ┌──────┐      │┌──────┐\n");
+	      printf("  》》》│   平均值   ├───┴┤A类不确定度 ├────┐  ┌──────┐\n");
+	      printf("        │            │        │            │        │  │ 总不确定度 │\n");
+	      printf("        └──────┘        └──────┘        ├─┤            │\n");
+	      printf("                                ┌──────┐        │  │            │\n");
+	      printf("                                │B类不确定度 ├────┘  └──────┘\n");
+        printf("                                │            │\n");
+				printf("                                └──────┘\n");
+			}
+		void chooseA()//A类不确定度
+			{
+		  	printf("\n  ****************************欢迎使用不确定度计算器**************************\n");
+				printf("        ┌───────┐\n");
+        printf("        │逐差法求平均值├──┐\n");
+	      printf("        │              │    │\n");
+	      printf("        └───────┘    │\n");
+        printf("        ┌──────┐        ┌──────┐\n");
+	      printf("        │   平均值   │  》》》│A类不确定度 ├────┐  ┌──────┐\n");
+	      printf("        │            │        │            │        │  │ 总不确定度 │\n");
+	      printf("        └──────┘        └──────┘        ├─┤            │\n");
+	      printf("                                ┌──────┐        │  │            │\n");
+	      printf("                                │B类不确定度 ├────┘  └──────┘\n");
+        printf("                                │            │\n");
+				printf("                                └──────┘\n");
+			}
+			void chooseB()//B类不确定度
+				{
+				printf("\n  ****************************欢迎使用不确定度计算器**************************\n");
+				printf("        ┌───────┐\n");
+        printf("        │逐差法求平均值├──┐\n");
+	      printf("        │              │    │\n");
+	      printf("        └───────┘    │\n");
+        printf("        ┌──────┐      │┌──────┐\n");
+	      printf("        │   平均值   ├───┴┤A类不确定度 ├────┐  ┌──────┐\n");
+	      printf("        │            │        │            │        │  │ 总不确定度 │\n");
+	      printf("        └──────┘        └──────┘        ├─┤            │\n");
+	      printf("                                ┌──────┐        │  │            │\n");
+	      printf("                                │B类不确定度 ├────┘  └──────┘\n");
+        printf("                          》》》│            │\n");
+				printf("                                └──────┘\n");
+				}
+			void choosetotal()//总不确定度
+				{
+				printf("\n  ****************************欢迎使用不确定度计算器**************************\n");
+				printf("        ┌───────┐\n");
+        printf("        │逐差法求平均值├──┐\n");
+	      printf("        │              │    │\n");
+	      printf("        └───────┘    │\n");
+        printf("        ┌──────┐      │┌──────┐\n");
+	      printf("        │   平均值   ├───┴┤A类不确定度 ├────┐   ┌──────┐\n");
+	      printf("        │            │        │            │        │   │ 总不确定度 │\n");
+	      printf("        └──────┘        └──────┘        │>>>│            │\n");
+	      printf("                                ┌──────┐        │   │            │\n");
+	      printf("                                │B类不确定度 ├────┘   └──────┘\n");
+        printf("                                │            │\n");
+	      printf("                                └──────┘\n");
+				}
+      void calcul()
+				{
+					printf("┌────────────────────────────────────┐\n");
+  				printf("│                               数据输入区                               │\n");
+					printf("┌──────┬───────┬─────────┬───────────┐\n");
+  				printf("│逐差平均值  │              │    平均变化量    │                      │\n");
+					printf("├──────┼───────┼─────────┼───────────┤\n");
+					printf("│A类不确定度 │              │    B类不确定度   │                      │\n");
+  				printf("├──────┼───────┴─────────┴───────────┤\n"); 
+					printf("│总不确定度  │                                                          │\n");
+					printf("└──────┴─────────────────────────────┘\n");
+				}
